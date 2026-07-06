@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/users";
+const API_URL = "https://lms-backend-tuns.onrender.com/api/users";
 
 export const getUsers = () => axios.get(API_URL);
 

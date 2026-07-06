@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/coupons";
+const API_URL = "https://lms-backend-tuns.onrender.com/api/coupons";
 
 export const getCoupons = () => axios.get(API_URL);
 

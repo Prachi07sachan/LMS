@@ -1,13 +1,15 @@
 import axios from "axios";
 
+const BASE_URL = "https://lms-backend-tuns.onrender.com/api";
+
 export const getUsers = () =>
-  axios.get("http://localhost:5000/api/users");
+  axios.get(`${BASE_URL}/users`);
 
 export const getCourses = () =>
-  axios.get("http://localhost:5000/api/courses");
+  axios.get(`${BASE_URL}/courses`);
 
 export const getPayments = () =>
-  axios.get("http://localhost:5000/api/payments");
+  axios.get(`${BASE_URL}/payments`);
 
 export const getCoupons = () =>
-  axios.get("http://localhost:5000/api/coupons");
+  axios.get(`${BASE_URL}/coupons`);

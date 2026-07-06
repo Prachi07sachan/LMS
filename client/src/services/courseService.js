@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:5000/api/courses";
+const API_URL = "https://lms-backend-tuns.onrender.com/api/courses";
 
 export const getCourses = () => axios.get(API_URL);
 
