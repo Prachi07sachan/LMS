@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import { getCourses, addCourse } from "../services/courseService";
+import { getCourses, addCourse, deleteCourse,
+
+ } from "../services/courseService";
 
 function Courses() {
   const [courses, setCourses] = useState([]);
@@ -32,6 +34,11 @@ function Courses() {
     });
     fetchCourses();
   };
+
+  const handleDelete = async (id) => {
+  await deleteCourse(id);
+  fetchCourses();
+};
 
   return (
     <div className="container mt-4">
@@ -74,6 +81,7 @@ function Courses() {
             <th>Title</th>
             <th>Description</th>
             <th>Price</th>
+            <th>Action</th>
           </tr>
         </thead>
 
@@ -83,6 +91,14 @@ function Courses() {
               <td>{course.title}</td>
               <td>{course.description}</td>
               <td>₹ {course.price}</td>
+               <td>
+    <button
+      className="btn btn-danger btn-sm"
+      onClick={() => handleDelete(course._id)}
+    >
+      Delete
+    </button>
+  </td>
             </tr>
           ))}
         </tbody>

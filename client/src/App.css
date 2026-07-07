@@ -1,4 +1,86 @@
 body{
+  background:#f4f7fb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+  margin-bottom:25px;
+  box-shadow:0 4px 15px rgba(0,0,0,.15);
+}
+
+.card{
+  border:none;
+  border-radius:16px;
+  box-shadow:0 6px 15px rgba(0,0,0,.12);
+  transition:all .3s ease;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 12px 25px rgba(0,0,0,.20);
+}
+
+.card h1{
+  font-size:48px;
+  font-weight:700;
+}
+
+.card h5{
+  font-weight:600;
+}
+
+table{
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+}
+
+thead{
+  background:#2563eb;
+  color:white;
+}
+
+tbody tr:hover{
+  background:#eef4ff;
+}
+
+form{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 6px 15px rgba(0,0,0,.10);
+}
+
+.form-control{
+  border-radius:10px;
+}
+
+.btn{
+  border-radius:10px;
+  padding:8px 18px;
+  font-weight:600;
+}
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto !important;
+}
+/* body{
   background:#f4f6f9;
 }
 
@@ -26,4 +108,4 @@ form{
   padding:20px;
   border-radius:10px;
   box-shadow:0 4px 10px rgba(0,0,0,.1);
-}
+} */
